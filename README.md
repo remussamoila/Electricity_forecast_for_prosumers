@@ -53,9 +53,13 @@ This project aims to forecast electricity consumption for prosumers using histor
 ### 6. 🗂️ Repository Structure
 
 -📁 data/ → Raw and processed datasets
+
 -📁 notebooks/ → Jupyter notebooks (cleaning, modeling, EDA)
+
 -📁 models/ → Trained models or pipelines
+
 -📁 src/ → Python scripts for preprocessing, training, etc.
+
 README.md → Project summary and plan
 
 
