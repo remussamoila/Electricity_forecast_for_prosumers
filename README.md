@@ -52,8 +52,16 @@ This project aims to forecast electricity consumption for prosumers using histor
 
 ### 6. 🗂️ Repository Structure
 
-📁 data/ → Raw and processed datasets
-📁 notebooks/ → Jupyter notebooks (cleaning, modeling, EDA)
-📁 models/ → Trained models or pipelines
-📁 src/ → Python scripts for preprocessing, training, etc.
+-📁 data/ → Raw and processed datasets
+-📁 notebooks/ → Jupyter notebooks (cleaning, modeling, EDA)
+-📁 models/ → Trained models or pipelines
+-📁 src/ → Python scripts for preprocessing, training, etc.
 README.md → Project summary and plan
+
+
+---
+
+### 📌 Final Goal
+
+To build an accurate and interpretable model that forecasts electricity consumption based on historical consumption and weather conditions — aiding energy planning and smart grid behavior for prosumers.
+
