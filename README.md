@@ -1,71 +1,102 @@
-## 📈 Electricity Consumption Forecast – Project Plan
+# ☀️ Solar Production Forecasting
 
-This project aims to forecast electricity consumption for prosumers using historical consumption, production, and weather data. The following steps outline the full pipeline from data collection to model evaluation.
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/remussamoila/solar-forecasting/blob/main/notebooks/03_modeling_lstm.ipynb)
 
----
-
-### 1. 🧹 Data Collection & Cleaning
-- Load historical consumption and production data (2020–2025).
-- Load weather data from all available stations.
-- Align timestamps across datasets (downsample or interpolate if necessary).
-- Remove or impute missing values (especially in weather data).
-- Normalize or standardize relevant features.
+> Forecasting solar electricity generation using weather data, time series modeling, and LSTM neural networks.
 
 ---
 
-### 2. 🧠 Feature Engineering
-- **Time-based features**: hour, day of week, holiday, season, trend.
-- **Weather features**: average temperature, humidity, wind speed, solar radiation.
-- **Lag features**: past consumption values (e.g., t-1, t-24, t-168).
-- **Rolling window features**: 3h, 24h, 7-day moving averages.
-- **Interaction features**: weather × time of day (e.g., temperature × hour).
+## 📊 Project Scope
+
+We work with historical solar production data (2007–2025) and blended weather data (ECA&D). The project targets short- and medium-term forecasting horizons (e.g. 1h, 24h, 7d ahead), with high temporal resolution.
 
 ---
 
-### 3. 🤖 Modeling
-- Split data using **time-based validation** (no data leakage).
-- Train baseline models (e.g., Linear Regression, SARIMAX).
-- Train advanced models:
-  - Tree-based models: XGBoost, LightGBM
-  - Neural networks: LSTM/GRU for sequential patterns
-- Hyperparameter tuning with Optuna or GridSearchCV
+## 🔧 Modules & Tasks
+
+### 📁 Phase 1: Data Preparation
+- [x] Collect solar production data (Excel files, 2007–2025)
+- [x] Extract temperature, wind, and sunshine data from ECA&D
+- [ ] Estimate or import solar irradiance (GHI/DNI/DHI)
+- [ ] Align and merge data into unified time-indexed DataFrames
+
+### 🧪 Phase 2: Feature Engineering
+- [ ] Time features: hour, day, season, holidays
+- [ ] Weather features: sunshine, wind, temperature
+- [ ] Lag/rolling window features for production and irradiance
+- [ ] Astronomical features: solar elevation, azimuth (via `pvlib`)
+
+### 🧠 Phase 3: Modeling
+- [ ] Build baselines (linear regression, XGBoost)
+- [ ] Train LSTM model on time-sequenced inputs
+- [ ] Tune hyperparameters (Optuna or GridSearchCV)
+- [ ] Validate using MAE, RMSE, MAPE
+
+### 📈 Phase 4: Evaluation & Visualization
+- [ ] Plot prediction vs. actual curves
+- [ ] Compare models across multiple forecast horizons
+- [ ] Analyze feature importances (where applicable)
+
+### 🚀 Phase 5: Sharing & Automation
+- [ ] Save model artifacts (HDF5, ONNX)
+- [ ] Enable team collaboration via Colab + GitHub
+- [ ] Optional: deploy REST API for on-demand forecasting
 
 ---
 
-### 4. 📊 Evaluation
-- Use metrics suited for regression:
-  - RMSE, MAE, MAPE
-- Evaluate models on unseen time windows.
-- Visualize:
-  - Actual vs predicted plots
-  - Feature importance (for tree models)
-  - SHAP values (to interpret model behavior)
+## 📂 Suggested Repository Structure
+
+```
+solar_forecast/
+├── data/                    # Raw & processed data
+│   ├── raw/                 # Original solar and weather data
+│   └── processed/           # Cleaned, merged DataFrames
+├── notebooks/               # Development notebooks (Colab/Jupyter)
+│   ├── 01_data_prep.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_modeling_lstm.ipynb
+│   └── 04_evaluation.ipynb
+├── scripts/                 # Modular scripts (for reuse & CLI)
+│   ├── data_loader.py
+│   ├── feature_builder.py
+│   └── train_model.py
+├── models/                  # Saved models
+├── reports/                 # Evaluation plots, figures
+├── README.md
+└── .gitignore
+```
 
 ---
 
-### 5. 🚀 Deployment (optional)
-- Save trained model (e.g., with `joblib` or `pickle`).
-- Create API endpoint for real-time prediction (e.g., FastAPI).
-- Deploy as a demo (e.g., Streamlit dashboard or HuggingFace Space).
+## 📦 Dependencies
+
+```bash
+pandas
+numpy
+tensorflow or pytorch
+scikit-learn
+matplotlib / seaborn
+pvlib
+```
 
 ---
 
-### 6. 🗂️ Repository Structure
-
--📁 data/ → Raw and processed datasets
-
--📁 notebooks/ → Jupyter notebooks (cleaning, modeling, EDA)
-
--📁 models/ → Trained models or pipelines
-
--📁 src/ → Python scripts for preprocessing, training, etc.
-
-README.md → Project summary and plan
-
+## 📌 To Do
+- [ ] Integrate solar position features using `pvlib`
+- [ ] Connect with satellite irradiance APIs (e.g., CAMS)
+- [ ] Improve generalization via cross-regional training
+- [ ] Publish Colab + GitHub workflow guide
 
 ---
 
-### 📌 Final Goal
+## 📜 License
 
-To build an accurate and interpretable model that forecasts electricity consumption based on historical consumption and weather conditions — aiding energy planning and smart grid behavior for prosumers.
+MIT License (or update if otherwise)
 
+---
+
+## 👥 Contributors
+
+- Remus Samoila & collaborators
