@@ -101,9 +101,9 @@ MIT License (or update if otherwise)
 
 - Samvel Karapetyan https://github.com/samokarapetyan
 - Anne Cojocaru https://github.com/anne-cojocaru
-- Alexabdru Moldovan https://github.com/alexandrumoldovan1
+- Alexandru Moldovan https://github.com/alexandrumoldovan1
 - Remus Samoilă https://github.com/remussamoila
 - Ana-Maria Strimbeanu https://github.com/anastrimbi
-- Aye https://github.com/ayemyanyein211
+- Aye Myanyein https://github.com/ayemyanyein211
 
 ---
