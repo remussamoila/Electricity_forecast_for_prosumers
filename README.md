@@ -10,17 +10,17 @@
 
 ## 📊 Project Scope
 
-We work with historical solar production data (2007–2025) and blended weather data (ECA&D). The project targets short- and medium-term forecasting horizons (e.g. 1h, 24h, 7d ahead), with high temporal resolution.
+We work with historical solar production data (2013–2025) and blended weather data (ECA&D). The project targets short- and medium-term forecasting horizons (e.g. 1h, 24h, 7d ahead), with high temporal resolution.
 
 ---
 
 ## 🔧 Modules & Tasks
 
 ### 📁 Phase 1: Data Preparation
-- [x] Collect solar production data (Excel files, 2007–2025)
+- [x] Collect solar production data (Excel files, 2013–2025)
 - [x] Extract temperature, wind, and sunshine data from ECA&D
-- [ ] Estimate or import solar irradiance (GHI/DNI/DHI)
-- [ ] Align and merge data into unified time-indexed DataFrames
+- [x] Estimate or import solar irradiance (GHI/DNI/DHI)
+- [x] Align and merge data into unified time-indexed DataFrames
 
 ### 🧪 Phase 2: Feature Engineering
 - [ ] Time features: hour, day, season, holidays
