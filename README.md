@@ -97,6 +97,13 @@ MIT License (or update if otherwise)
 
 ---
 
-## 👥 Contributors
+## 👥 Team Members
 
-- Remus Samoila & collaborators
+- Samvel
+- Anne
+- Alex
+- Remus
+- Ana
+- Aye
+
+---
