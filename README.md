@@ -109,36 +109,67 @@ MIT License (or update if otherwise)
 ---
 Neural Networks & Deep Learning in Business Applications: Project Overview
 1. Project Proposal [Anne]
+   
 Title: Concisely describes the project focus.
+
 Team Members: List members and roles.
+
 Objective: Brief statement of goals.
+
 Research Question: Clear question highlighting the business application.
+
 2. Literature Review [Alex]
+
 Background: Summarize relevant research and studies.
+
 Relevance: Connect literature to project goals and business application.
+
 3. Methodology [Ana Maria]
+
 Data Collection:
+
 GitHub Repository: host dataset(s), code, and documentation. Ensure clarity and organization.
+
 Data Source: Detail and justify data selection.
+
 Data Preprocessing: Describe preparation steps.
+
 Research Design:
+
 Model Selection: Explain model choice and its relevance.
+
 Implementation Details: Describe model architecture, layers, functions, and algorithms.
+
 4. Experimentation and Results [Aye]
+
 Training Process: Outline model training and challenges.
+
 Evaluation Metrics: Metrics for model performance.
+
 Results: Present findings with visual aids.
+
 5. Business Implications [Remus]
+
 Analysis: Interpret results in the business context.
+
 Impact: Potential business improvements or innovations.
+
 Limitations and Future Work: Address study limitations and future research directions.
+
 6. Presentation [All]
+
 PowerPoint Presentation: Summarize project highlights, methodology, and implications.
+
 Guidelines: Include introduction, methodology, results, business implications, conclusion, and prepare for Q&A.
-7. Documentation and Submission [Anne&Alex]
+
+7. Documentation and Submission [All]
+
 Final Report: Include all project sections.
+
 GitHub Repository: Update with final code, dataset(s), and resources.
+
 Submission Instructions: Follow guidelines, including deadlines and format.
+
 Evaluation Criteria [prof]
 Originality and Creativity: Uniqueness of problem and approach.
 Technical Competence: Proficiency in neural networks and deep learning.
